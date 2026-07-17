@@ -1,0 +1,47 @@
+services:
+  hive:
+    container_name: hive
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hive:latest
+    network_mode: host
+    privileged: true
+    devices:
+      - /dev/snd:/dev/snd
+      # PCA9685 al vestei haptice (haptic_vest_node) — I2C-ul Pi-ului.
+      - /dev/i2c-1:/dev/i2c-1
+    group_add:
+      - audio
+    volumes:
+      - ../src:/ws/src
+      - ../models:/ws/models
+      - ../scripts:/ws/scripts
+      # Clientul BLE de referinta (pi_client_ble.py) — incarcat dinamic de
+      # ble_bridge_node, NU copiat in pachet (ramane sursa unica de protocol).
+      - ../firmware:/ws/firmware
+      # bleak vorbeste cu BlueZ-ul host-ului prin D-Bus.
+      - /run/dbus:/run/dbus
+      - ws_install:/ws/install
+      - ws_build:/ws/build
+      - ws_log:/ws/log
+      - /run/user/1000/pulse:/run/user/1000/pulse
+    environment:
+      - ROS_DOMAIN_ID=42
+      - RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+      - PULSE_SERVER=unix:/run/user/1000/pulse/native
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - KERYKE_SPEAKER_NAME=UACDemo
+      - KERYKE_YOLO_MODEL=${KERYKE_YOLO_MODEL:-yolov8n.pt}
+      - KERYKE_ONNX_THREADS=${KERYKE_ONNX_THREADS:-2}
+    stdin_open: true
+    tty: true
+    command: bash
+
+# install/build/log traiau doar in stratul scriabil al containerului --
+# disparau la fiecare recreare (rebuild de imagine, down+up, Pi reboot).
+# Volume-uri numite, gestionate de Docker, ca sa supravietuiasca.
+volumes:
+  ws_install:
+  ws_build:
+  ws_log:

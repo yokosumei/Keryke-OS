@@ -1,0 +1,93 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="o3zjjjFzU0WgfJSRYk9u">
+    <mxGraphModel dx="1080" dy="748" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-7" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="300" width="330" x="90" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Stiva Bluetooth&lt;/span&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;(BLE GATT)&lt;/div&gt;&#xa;&#xa;" vertex="1">
+          <mxGeometry height="50" width="120" x="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Telemetrie Periodica" vertex="1">
+          <mxGeometry height="60" width="120" x="130" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Intretinere/initiere senzori" vertex="1">
+          <mxGeometry height="60" width="120" x="260" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Debug (consola seriala-activa la cerere)" vertex="1">
+          <mxGeometry height="60" width="250" x="130" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-15" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="" vertex="1">
+          <mxGeometry height="300" width="310" x="560" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Bucla control ToF- ritm haptic- servo" vertex="1">
+          <mxGeometry height="60" width="120" x="600" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Achititie inertiala, vTaskDelayUntil, 50 ms fix" vertex="1">
+          <mxGeometry height="60" width="120" x="740" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-18" edge="1" parent="1" source="4OhZyyjngTOLQCkmRxkM-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.033;entryY=0.367;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;strokeWidth=3;" target="4OhZyyjngTOLQCkmRxkM-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="170" />
+              <mxPoint x="510" y="170" />
+              <mxPoint x="510" y="190" />
+              <mxPoint x="590" y="190" />
+              <mxPoint x="590" y="162" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-19" connectable="0" parent="4OhZyyjngTOLQCkmRxkM-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Coada FreeRTOS:&lt;div&gt;comenzi actuator&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.4369" y="9" as="geometry">
+            <mxPoint x="63" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-22" edge="1" parent="1" source="4OhZyyjngTOLQCkmRxkM-16" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.429;entryY=0.042;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;" target="4OhZyyjngTOLQCkmRxkM-12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="200" />
+              <mxPoint x="520" y="210" />
+              <mxPoint x="450" y="200" />
+              <mxPoint x="330" y="190" />
+              <mxPoint x="370" y="180" />
+              <mxPoint x="190" y="180" />
+            </Array>
+            <mxPoint x="370" y="230" as="sourcePoint" />
+            <mxPoint x="420" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-25" connectable="0" parent="4OhZyyjngTOLQCkmRxkM-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="SpinLook:spapshot,&lt;div&gt;telemetrie&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.5264" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-23" edge="1" parent="1" source="4OhZyyjngTOLQCkmRxkM-17" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.413;exitY=0.942;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.408;entryY=0.067;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;" target="4OhZyyjngTOLQCkmRxkM-13" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="280" />
+              <mxPoint x="460" y="240" />
+              <mxPoint x="470" y="240" />
+              <mxPoint x="420" y="250" />
+              <mxPoint x="370" y="180" />
+            </Array>
+            <mxPoint x="370" y="230" as="sourcePoint" />
+            <mxPoint x="420" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4OhZyyjngTOLQCkmRxkM-24" connectable="0" parent="4OhZyyjngTOLQCkmRxkM-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Indicatori atomici:&lt;div&gt;predare I2C&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1671" y="-4" as="geometry">
+            <mxPoint x="51" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
