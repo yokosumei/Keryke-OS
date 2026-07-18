@@ -75,14 +75,14 @@ Comunicarea dintre noduri se face exclusiv prin topicuri ROS 2 publice, document
 
 ## Modele AI folosite
 
-| Model | Rol | Proveniență |
-|---|---|---|
-| **YOLOv8n** | detecție de obstacole + azimut din încadrare | pre-antrenat (COCO) |
-| **YOLOv8n-seg** (custom) | segmentarea zonei sigure de mers | singurul model antrenat de la zero de echipă |
-| **Depth Anything V2 Small** | hartă de adâncime metrică | pre-antrenat, scalare calibrată static față de senzorul ToF |
-| **YAMNet** | clasificarea sunetelor de mediu (vehicule, sirene, claxoane, strigăte) | pre-antrenat (AudioSet) |
-| **OpenWakeWord** | cuvânt de activare pentru asistentul vocal | pre-antrenat |
-| **Gemini 2.5 Flash** | asistent vocal multimodal, declanșat | serviciu cloud, prin API |
+| Model | Rol |
+|---|---|
+| **YOLOv8n** | detecție de obstacole + azimut din încadrare |
+| **YOLOv8n-seg** (custom) | segmentarea zonei sigure de mers |
+| **Depth Anything V2 Small** | hartă de adâncime metrică |
+| **YAMNet** | clasificarea sunetelor de mediu (vehicule, sirene, claxoane, strigăte)(AudioSet) 
+| **OpenWakeWord** | cuvânt de activare pentru asistentul vocal
+| **Gemini 2.5 Flash** | asistent vocal multimodal, declanșat/serviciu cloud, prin API |
 
 Principiul de selecție a fost disciplinat: niciun model nou fără o sarcină reală pe care s-o rezolve, și modele pre-antrenate oriunde a fost posibil.
 
