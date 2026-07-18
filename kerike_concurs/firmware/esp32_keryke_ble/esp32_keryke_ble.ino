@@ -93,7 +93,7 @@ TwoWire I2CTOF = TwoWire(1);
 #define TOF_SDA   39
 #define TOF_SCL   40
 #define IRQ_PIN   -1
-#define XSHUT_PIN  1
+#define XSHUT_PIN  35
 
 // Servo (LEDC) — adaptați la actuatorul real (stepper: vezi applyMotorRotation)
 #define SERVO_PIN      21
