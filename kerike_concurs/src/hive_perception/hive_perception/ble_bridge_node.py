@@ -45,6 +45,7 @@ import asyncio
 import importlib.util
 import json
 import math
+import sys
 import threading
 from pathlib import Path
 
@@ -81,6 +82,10 @@ def _load_ble_client_module(explicit_path: str):
         if p.is_file():
             spec = importlib.util.spec_from_file_location("pi_client_ble", p)
             mod = importlib.util.module_from_spec(spec)
+            # Trebuie in sys.modules INAINTE de exec_module: dataclasses
+            # (Telemetry) rezolva adnotarile de tip prin sys.modules.get(cls.__module__),
+            # altfel primeste None si crapa la AttributeError pe __dict__.
+            sys.modules[spec.name] = mod
             spec.loader.exec_module(mod)
             return mod, str(p)
     raise FileNotFoundError(
